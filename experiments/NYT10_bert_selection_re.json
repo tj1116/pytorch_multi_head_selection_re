@@ -1,0 +1,23 @@
+{
+    "dataset": "NYT10_bert",
+    "model": "multi_head_selection",
+    "data_root": "data/nyt10/multi_head_selection",
+    "raw_data_root": "raw_data/nyt10",
+    "train": "train.json",
+    "dev": "test.json",
+    "relation_vocab": "relations2id.json",
+    "print_epoch": 1,
+    "evaluation_epoch":27,
+    "max_text_len": 150,
+    "cell_name": "lstm",
+    "emb_size": 768,
+    "rel_emb_size": 50,
+    "hidden_size": 300,
+    "threshold": 0.5,
+    "activation": "tanh",
+    "optimizer": "adam",
+    "epoch_num":300,
+    "gpu":0,
+    "bert_pretrain_path": "pretrain_model/bert/bert-base-uncased.tar.gz",
+    "is_bert": "nyt10_bert_tokenizer"
+}

@@ -1,0 +1,23 @@
+{
+    "dataset": "NYT",
+    "model": "multi_head_selection",
+    "data_root": "data/nyt/multi_head_selection",
+    "raw_data_root": "raw_data/nyt",
+    "train": "train.json",
+    "dev": "test.json",
+    "relation_vocab": "relations2id.json",
+    "print_epoch": 3,
+    "evaluation_epoch":27,
+    "max_text_len": 120,
+    "cell_name": "lstm",
+    "emb_size": 768,
+    "rel_emb_size": 50,
+    "hidden_size": 300,
+    "threshold": 0.5,
+    "activation": "tanh",
+    "optimizer": "adam",
+    "epoch_num":200,
+    "gpu":0,
+    "bert_pretrain_path": "pretrain_model/bert/bert-base-uncased.tar.gz",
+    "is_bert": "bert_bilstem_crf"
+}
